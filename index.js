@@ -8,7 +8,13 @@ Do the following:
    2. Return true if age is 18 or higher
 
 */
-
+let votingAge = 25
+if (votingAge >= 18){
+console.log("True")
+}
+else{
+  console.log("False")
+}
 
 
 /*
@@ -21,7 +27,12 @@ Do the following:
 
 */
 
-
+let age1 = 25
+let age2 = 35
+if (age2 > age1){
+  age1=age2
+  console.log(age1)
+}
 
 /*
 Task 3 - Convert Strings to Numbers
@@ -33,7 +44,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+const number ="1999"
+console.log(parseInt(number))
 
 /*
 Task 4 - Mood Checker
@@ -44,7 +56,13 @@ Do the following:
    3. Else just print 'So moody!'
 
 */
+var moodCheck = window.prompt("How Are You Today?")
+if (moodCheck=="happy"){
+document.write("Yay , Me Too")}
+else if (moodCheck=="sad"){
+document.write("Aw cheer up")
 
+}
 
 /*
 
@@ -54,14 +72,33 @@ Task 5 - Odd or Even
 Use conditionals to check if a hardcoded number is odd or even, and then console.log the number is odd or even with the numbers value.
 
 */
-
-var num; // write a number here
+var x=10;
+if (x%2==0){
+  console.log(x  +" Is an Even Number")
+}
+else {
+  console.log(x + " Is an Odd Number")
+}
+//var num;  write a number here
 
 // write your conditions here
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 FIZZBUZZ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
-
+for (let i=1;i<101;i++){
+   if (i%15===0){
+     console.log("FIZZBUZZ");
+   }
+   else if (i%3===0){
+     console.log("FIZZ");
+   }
+    else if (i%5===0){
+     console.log("BUZZ");
+   }
+   else{
+     console.log(i);
+     }
+ }
 /*
 
 You're about to do an assignment called "Fizz Buzz", which is one of the classic programming challenges. 
